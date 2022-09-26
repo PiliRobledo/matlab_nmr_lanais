@@ -1,8 +1,21 @@
-function [K] = kernel(A,tau,T)
+function [K] = kernel(A,tau,T,a,b)
 %% A tipo de Kernel
 %% tau dato
 %% espacio vectorial armado
-%% 
+%% a primer punto
+%% b segundo punto (si es cero nos manda al final)
+
+$$ bloque de fraccionado
+
+if b==0
+    T=T(a:end);
+    else
+    T=T(a:b)
+end
+
+
+%% Etapa de Kernel
+
 switch A
     case 1 % Decaimiento T2
         K=exp(-tau*(1./T));
