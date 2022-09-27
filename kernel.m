@@ -10,9 +10,13 @@ $$ bloque de fraccionado
 if b==0
     T=T(a:end);
     else
-    T=T(a:b)
+    T=T(a:b);
 end
-
+if a==0
+    T=T(1:b);
+    else
+    T=T(a:b);
+end
 
 %% Etapa de Kernel
 
