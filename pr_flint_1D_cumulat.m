@@ -8,7 +8,7 @@
 
 clc;clear all;close all
 
-cd("C:\Users\Pili Robledo\Desktop\doctorado\pm5\220809_carbonNafion\CPMG\2")
+cd("H:\pm5\Pili_Robledo\2022\221003_carbon_nafion_pt_1n\CPMG\1")
 
 % load 'data.dat' % carga de datos
 load data.csv;
@@ -25,7 +25,7 @@ Z=Z/masa;           %para comparar
 %-----------------------------------------------------------------
 alpha=1E0;
 Nx = 100;      % number of bins in relaxation time grids
-T = logspace(0,3,Nx);
+T = logspace(-1,3,Nx);
 T=T';
 d=length(tau1);
 % -------------------KERNEL-----------------------------------
