@@ -11,14 +11,14 @@ Z=data2D';
 
 % Z=Z(1:200,1:45);
 
-alpha=1e-3;
+alpha=1e-1;
 %% *************************** D(MOUSE) - T2 *******************
 
 Nx = 100;      % number of bins in relaxation time grids
 Ny = 100;     
 
-T1 = logspace(-1,4,Nx)';  %T2
-T2 = logspace(-2,2,Ny)';  %dif
+T1 = logspace(-1,2,Nx)';  %T2
+T2 = logspace(-1,2,Ny)';  %dif
 
 load T2Axis.dat;
 load DiffAxis.dat;
